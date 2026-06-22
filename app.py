@@ -783,13 +783,13 @@ def build_app():
 # MAIN ENTRY POINT
 # ═══════════════════════════════════════════════════════════════════════════════
 
+# Run all startup initialization (must be top-level for Hugging Face Spaces)
+startup()
+
+# Build the Gradio app
+demo = build_app()
+
 if __name__ == "__main__":
-    # Run all startup initialization
-    startup()
-
-    # Build and launch the Gradio app
-    demo = build_app()
-
     print("\n🚀 Launching CyberGuard AI...")
     print("   Local URL: http://localhost:7860")
     print("   Share URL will be generated if share=True\n")
