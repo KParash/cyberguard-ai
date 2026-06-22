@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment
+venv/
+ENV/
+env/
+.env
+
+# Database
+cyberguard.db
+
+# HuggingFace
+.huggingface/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
